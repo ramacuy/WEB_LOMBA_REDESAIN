@@ -1,0 +1,79 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* UTILITY */
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center center / cover no-repeat;
+  height: 400px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+/* Teks hero */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Judul hero */
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #023c7c;
+  color: #fff;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 0;
+}
+.bg-light {
+  background: #f9f9f9;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.section p {
+  text-align: center;
+}
+
+/* LISTS */
+.section ul {
+  list-style: disc;
+  margin-top: 20px;
+  margin-left: 40px;
+}
