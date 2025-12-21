@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* PROGRAM */
+.program {
+  padding: 80px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program-text {
+  width: 50%;
+}
+
+.program-text h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.program-text span {
+  color: #023c7c;
+  font-weight: 700;
+}
+
+.program-text p {
+  margin-top: 20px;
+  color: #666;
+}
+
+.program-list {
+  width: 40%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
