@@ -1,16 +1,21 @@
-/* GLOBAL */
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ffffff;
   color: #333;
 }
 
 .container {
   width: 90%;
+  max-width: 1200px;
   margin: auto;
 }
+
 
 /* HEADER */
 .header-section {
