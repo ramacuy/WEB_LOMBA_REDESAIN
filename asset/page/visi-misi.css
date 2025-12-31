@@ -29,16 +29,6 @@ body {
 }
 
 /* NAVBAR */
-.navbar {
-  background: #ff8c00;
-}
-
-.nav-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-}
 
 .logo {
   color: #fff;
@@ -108,14 +98,6 @@ nav ul li a:hover {
 .profesional { background: #006064; }
 .entrepreneur { background: #8e24aa; }
 
-/* FOOTER */
-.footer {
-  background: #ff8c00;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

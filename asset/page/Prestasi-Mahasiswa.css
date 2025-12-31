@@ -1,20 +1,21 @@
-/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background: #ffffff;
   color: #333;
 }
 
 .container {
   width: 90%;
+  max-width: 1200px;
   margin: auto;
 }
+
 
 /* HERO */
 .hero {
@@ -90,7 +91,7 @@ body {
 .testimonial {
   background: #fff;
   padding: 30px;
-  border-left: 4px solid #ff8c00;
+  border-left: 4px solid #023c7c;
   font-style: italic;
   margin: 0 auto;
   max-width: 600px;
@@ -112,7 +113,7 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 12px 25px;
-  background: #ff8c00;
+  background: #023c7c;
   color: #fff;
   border-radius: 5px;
   margin-top: 20px;
