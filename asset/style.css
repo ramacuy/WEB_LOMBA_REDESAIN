@@ -192,7 +192,7 @@
         pointer-events: none;
         transition: all 0.3s ease;
         border-radius: 8px;
-        overflow: hidden;
+        overflow: visible;
       }
 
       .dropdown-content a {
@@ -217,7 +217,7 @@
         pointer-events: auto;
       }
 
-      .dropdown-content.side {
+      .dropdown-content.side-sub {
         top: 0;
         left: 100%;
       }
@@ -226,15 +226,23 @@
         position: relative;
       }
 
-      .submenu > .dropdown-content.side-sub {
-        top: 0;
-        left: 100%;
-        display: none;
-      }
+/* Dengan CSS yang baru ini: */
+.submenu > .dropdown-content.side-sub {
+  top: 0;
+  left: 100%;
+  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
 
-      .submenu:hover > .dropdown-content.side-sub {
-        display: block;
-      }
+.submenu:hover > .dropdown-content.side-sub {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 
       /* HERO */
       .hero {
