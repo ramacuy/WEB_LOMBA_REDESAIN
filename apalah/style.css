@@ -1,0 +1,184 @@
+:root {
+  --primary: #f58220;
+  --dark: #1f2937;
+  --muted: #6b7280;
+  --bg: #f9fafb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--dark);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.45)
+    ),
+    url("image/hero-campus.jpg") center/cover;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+}
+
+.hero-search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-search input,
+.hero-search select {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  min-width: 220px;
+}
+
+/* FEATURED */
+.featured {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+}
+
+.featured-card {
+  display: flex;
+  gap: 30px;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  align-items: center;
+}
+
+.featured-card img {
+  width: 200px;
+  border-radius: 12px;
+}
+
+.featured-info span {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.featured-info p {
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* LECTURERS */
+.lecturers {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.lecturers h2 {
+  margin-bottom: 30px;
+}
+
+.lecturer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.lecturer-card {
+  background: var(--white);
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  transition: .3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+
+.lecturer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.12);
+}
+
+.lecturer-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.lecturer-card span {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.card-actions {
+  margin-top: 12px;
+}
+
+.card-actions a {
+  margin: 0 6px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* LOAD MORE */
+.load-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.load-more button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .featured-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-card img {
+    width: 150px;
+  }
+}
+w

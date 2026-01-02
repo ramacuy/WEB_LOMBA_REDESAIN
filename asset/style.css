@@ -43,6 +43,8 @@ a {
 /* NAVBAR */
 header {
   background: var(--blue);
+  position: relative;
+  z-index: 1000;
 }
 
 .nav {
@@ -52,6 +54,7 @@ header {
   align-items: center;
   padding: 14px 20px;
   color: #fff;
+  position: relative;
 }
 
 .logo img {

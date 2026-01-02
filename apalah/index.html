@@ -1,282 +1,80 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UC Online Learning</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Dosen Pengajar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <link rel="icon" href="../image/logo_tab.png" type="image/png" />
-    <link rel="stylesheet" href="asset/style.css" />
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Profil Dosen Pengajar</h1>
+    <p>Kenali dosen profesional Universitas Ciputra Online</p>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
+    <div class="hero-search">
+      <input type="text" placeholder="Cari nama dosen...">
+      <select>
+        <option>Semua Program</option>
+        <option>S2 Manajemen</option>
+        <option>S1 Informatika</option>
+      </select>
+    </div>
+  </div>
+</section>
 
-  <body>
-    <!-- TOP BAR -->
-    <div class="topbar">
-      <div class="inner">
-        <div>UC Surabaya • UC Makassar • UC Jakarta</div>
-        <div>📧 pmb.online@ciputra.ac.id | ☎ 0812 16 300 303</div>
+<!-- KETUA PROGRAM -->
+<section class="featured">
+  <h2>Ketua Program</h2>
+
+  <div class="featured-card">
+    <img src="image/dosen1.jpg" alt="Ketua Program">
+    <div class="featured-info">
+      <h3>Dr. Budi Santoso, MM</h3>
+      <span>Ketua Program S2 Manajemen</span>
+      <p>Bidang keahlian: Manajemen Strategis & Kewirausahaan</p>
+      <a href="#" class="btn">Lihat Profil</a>
+    </div>
+  </div>
+</section>
+
+<!-- DOSEN GRID -->
+<section class="lecturers">
+  <h2>Dosen Pengajar</h2>
+
+  <div class="lecturer-grid">
+    <!-- CARD -->
+    <div class="lecturer-card">
+      <img src="image/dosen2.jpg" alt="Dosen">
+      <h4>Nama Dosen</h4>
+      <span>Manajemen Keuangan</span>
+      <div class="card-actions">
+        <a href="#">👁</a>
+        <a href="#">📘</a>
+        <a href="#">🔗</a>
       </div>
     </div>
 
-    <!-- NAVBAR -->
-    <header>
-      <div class="nav">
-        <div class="logo">
-          <img src="asset/image/logo_ciputra.png" alt="Universitas Ciputra" />
-        </div>
-
-        <nav class="menu">
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Tentang Universitas ▾</a>
-            <div class="dropdown-content">
-              <a href="views/page/Dashboard.html">Sekilas Universitas</a>
-              <a href="views/page/visi-misi-kami.html">Visi, Misi, dan Nilai</a>
-              <a href="#">Profil Dosen Pengajar</a>
-              <a href="views/page/Fasilitas.html">Fasilitas Digital</a>
-              <a href="#">Prestasi Mahasiswa</a>
-              <a href="#">Lokasi Universitas</a>
-              <a href="#">Logo Universitas</a>
-              <a href="#">Hymne Universitas</a>
-            </div>
-          </div>
-
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Program Studi ▾</a>
-            <div class="dropdown-content">
-              <a href="#">Program Bergelar</a>
-              <a href="#">Program RPL</a>
-              <a href="#">Program Tidak Bergelar</a>
-            </div>
-          </div>
-
-          <a href="#">Pendaftaran</a>
-          <a href="#">Beasiswa</a>
-
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Informasi ▾</a>
-            <div class="dropdown-content">
-              <a href="#">Kalender Akademik</a>
-              <a href="#">Biaya Kuliah</a>
-              <a href="#">FAQ / Pertanyaan</a>
-              <a href="#">Artikel</a>
-            </div>
-          </div>
-
-          <a href="#">Hubungi Kami</a>
-        </nav>
+    <div class="lecturer-card">
+      <img src="image/dosen3.jpg" alt="Dosen">
+      <h4>Nama Dosen</h4>
+      <span>Manajemen SDM</span>
+      <div class="card-actions">
+        <a href="#">👁</a>
+        <a href="#">📘</a>
+        <a href="#">🔗</a>
       </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-inner">
-        <div>
-          <small>PEMBELAJARAN DARING UNIVERSITAS CIPUTRA</small>
-          <h1>
-            Tingkatkan Gelar Tanpa<br />
-            Harus Berhenti Bekerja.<br />
-            <span class="highlight">100% Online</span>
-          </h1>
-          <p>Raih gelar S1 & S2 dari universitas terakreditasi Unggul sambil tetap bekerja.</p>
-          <div class="program-btns">
-            <button>S1 Manajemen</button>
-            <button>S1 Informatika</button>
-            <button>S2 Manajemen</button>
-          </div>
-        </div>
-
-        <div class="hero-img">
-          <img src="asset/image/background.webp" alt="UC Online" />
-        </div>
-      </div>
-    </section>
-
-    <!-- FORM -->
-    <div class="form-wrap">
-      <h3>Dapatkan Formulir Pendaftaran GRATIS!</h3>
-      <form class="form" onsubmit="submitForm(event)">
-        <input type="text" placeholder="Nama" required />
-        <input type="tel" placeholder="No. WhatsApp" required />
-        <select>
-          <option>S1 Manajemen</option>
-          <option>S1 Informatika</option>
-          <option>S2 Manajemen</option>
-        </select>
-        <button>Klaim Voucher GRATIS!</button>
-      </form>
     </div>
 
-    <!-- JANGKAUAN -->
-    <section class="reach">
-      <div class="reach-container">
-        <div>
-          <h2>UC Online Menjangkau <span>Lebih Luas</span></h2>
-          <p>UC Online memungkinkan mahasiswa dari seluruh Indonesia mengikuti perkuliahan secara fleksibel dan berkualitas.</p>
-          <a href="#" class="btn">Lihat Program</a>
-        </div>
+    <!-- ulangi card -->
+  </div>
 
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Online Learning" />
-      </div>
-    </section>
+  <div class="load-more">
+    <button>Muat Lebih Banyak</button>
+  </div>
+</section>
 
-    <!-- MAP -->
-    <section class="map-section">
-      <div class="map-container">
-        <img src="asset/image/peta.webp" alt="Peta Mahasiswa UC Online" />
-        <div class="map-text">
-          <h2>MAHASISWA</h2>
-          <p>
-            <strong>Mahasiswa UC Online</strong> tersebar di seluruh
-            <span>Indonesia</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROGRAM PILIHAN -->
-    <section class="program-section">
-      <div class="program-container">
-        <div class="program-text">
-          <h2>
-            Berbagai Pilihan<br />
-            Program<br />
-            Berkualitas di<br />
-            UC Online
-          </h2>
-        </div>
-        <div class="program-cards">
-          <a class="program-card ibm" href="#">
-            <p>Program Sarjana<br /><strong>S1 Manajemen</strong></p>
-          </a>
-          <a class="program-card imt" href="#">
-            <p>Program Sarjana<br /><strong>S1 Informatika</strong></p>
-          </a>
-          <a class="program-card mem" href="#">
-            <p>Program Magister<br /><strong>S2 Manajemen</strong></p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHY SECTION -->
-    <section class="why-section">
-      <div class="why-container">
-        <div class="why-features">
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fa-solid fa-globe"></i>
-            </div>
-            <p>Perkuliahan 100% Full Online</p>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fa-solid fa-star"></i>
-            </div>
-            <p>Berkualitas</p>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
-            <p>Metode Belajar Mandiri</p>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fa-solid fa-layer-group"></i>
-            </div>
-            <p>
-              Akses Materi Perkuliahan Via<br />
-              Learning Management System (LMS)
-            </p>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fa-solid fa-calendar-check"></i>
-            </div>
-            <p>Jadwal Fleksibel</p>
-          </div>
-
-          <div class="feature-item">
-            <div class="feature-icon">
-              <i class="fa-solid fa-wallet"></i>
-            </div>
-            <p>Biaya Kuliah Terjangkau</p>
-          </div>
-        </div>
-
-        <div class="why-content">
-          <h3>
-            <span class="highlight-text">Kemudahan</span> dan<br />
-            <strong>Fleksibilitas Dalam<br />Belajar</strong>
-          </h3>
-          <p>
-            UC Online menawarkan pembelajaran secara daring dan mandiri melalui
-            platform Learning Management System yang handal, lengkap, mudah diakses,
-            dan terintegrasi.
-          </p>
-          <button class="btn-more">Lebih Lanjut</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-col">
-          <img src="asset/image/logo_footer.png" alt="UC Online Learning" class="footer-logo" />
-        </div>
-
-        <div class="footer-col">
-          <h3>Program Studi</h3>
-          <ul>
-            <li><a href="#">S1 Manajemen</a></li>
-            <li><a href="#">S1 Informatika</a></li>
-            <li><a href="#">S2 Manajemen</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h3>Alamat Kampus</h3>
-          <p>UC Online Center Surabaya, Citraland CBD Boulevard Surabaya</p>
-        </div>
-
-        <div class="footer-col">
-          <h3>Informasi Kontak</h3>
-          <p>📱 0812 16 300 303</p>
-          <p>✉️ pmb.online@ciputra.ac.id</p>
-          <div class="social-icons">
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="TikTok">🎵</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>Copyright © 2025 Universitas Ciputra Online. All Right Reserved.</p>
-      </div>
-    </footer>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/6281216300303" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <script>
-      function submitForm(e) {
-        e.preventDefault();
-        alert("Terima kasih! Tim UC Online akan menghubungi Anda.");
-      }
-    </script>
-  </body>
+</body>
 </html>
