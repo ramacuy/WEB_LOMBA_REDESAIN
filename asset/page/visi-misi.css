@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -16,93 +17,142 @@ body {
   margin: auto;
 }
 
-/* TOP BAR */
-.top-bar {
-  background: #f5f5f5;
-  font-size: 13px;
-}
-
-.top-bar .container {
+/* ================= HERO ================= */
+.hero {
+  position: relative;
+  height: 55vh;
+  background: url("../../asset/image/uc-online-surabaya-kuliah-online.jpg")
+    center/cover no-repeat;
   display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
+  align-items: center;
+  justify-content: center;
 }
 
-/* NAVBAR */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
 
-.logo {
+.hero-content {
+  position: relative;
   color: #fff;
-  font-size: 22px;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
-.logo span {
-  font-weight: 300;
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.95;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* HERO */
-.hero img {
-  width: 100%;
-  max-height: 450px;
-  object-fit: cover;
-}
-
-/* VISI MISI */
+/* ================= VISI MISI ================= */
 .visi-misi {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  margin: 60px auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 80px 0;
+  align-items: start;
+}
+
+.visi-misi .box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
 }
 
 .visi-misi h2 {
+  font-size: 1.6rem;
   margin-bottom: 15px;
+  color: #023c7c;
 }
 
-/* NILAI */
+.visi-misi p,
+.visi-misi li {
+  color: #555;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.visi-misi ol {
+  padding-left: 18px;
+}
+
+/* ================= NILAI BUDAYA ================= */
 .nilai {
-  background: #f9f9f9;
-  padding: 60px 20px;
+  background: #f8f9fb;
+  padding: 90px 20px;
   text-align: center;
+}
+
+.nilai h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.nilai-desc {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: #666;
 }
 
 .nilai-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
 .card {
-  padding: 40px 20px;
-  border-radius: 12px;
+  padding: 50px 25px;
+  border-radius: 20px;
   color: #fff;
+  box-shadow: 0 20px 40px rgba(0,0,0,.18);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.integritas { background: #2e7d32; }
-.profesional { background: #006064; }
-.entrepreneur { background: #8e24aa; }
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,.28);
+}
 
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+.card p {
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.integritas {
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+}
+
+.profesional {
+  background: linear-gradient(135deg, #006064, #00838f);
+}
+
+.entrepreneur {
+  background: linear-gradient(135deg, #8e24aa, #ab47bc);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .visi-misi {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
 }

@@ -16,75 +16,167 @@ body {
   margin: auto;
 }
 
+/* ROOT */
+:root {
+  --primary: #023c7c;
+  --accent: #0b8065;
+  --dark: #1f2937;
+  --muted: #6b7280;
+  --bg-soft: #f8f9fb;
+  --white: #ffffff;
+}
 
 /* HERO */
-.hero {
-  background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover no-repeat;
-  padding: 120px 0;
+.hero-dosen {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") center/cover no-repeat;
+  padding: 110px 20px;
+  color: white;
   text-align: center;
-  color: #000000;
+  position: relative;
+  z-index: 1;
 }
 
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* horizontal center */
-  justify-content: center; /* vertical center */
-  text-align: center; /* fallback untuk teks */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+   z-index: 0;
+  pointer-events: none;
 }
 
-.hero-text p {
-  margin-top: 10px;
-  text-align: center; /* pastikan */
-  color: #ffffff;
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+   z-index: 0;
+  pointer-events: none;
+}
+
+.hero-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
 }
 
 /* SECTION */
 .section {
-  padding: 60px 0;
+  padding: 70px 0;
 }
+
 .bg-light {
-  background: #f9f9f9;
+  background: var(--bg-soft);
 }
+
 .section h2 {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 1.9rem;
+  margin-bottom: 40px;
+}
+
+/* FEATURED */
+.featured-card {
+  display: flex;
+  gap: 40px;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+  align-items: center;
+}
+
+.featured-card img {
+  width: 240px;
+  border-radius: 14px;
+}
+
+.featured-info span {
+  color: var(--accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.featured-info p {
+  margin: 15px 0;
+  color: var(--muted);
+}
+
+.featured-action a {
+  margin-right: 12px;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* GRID DOSEN */
 .grid-dosen {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
 }
+
 .card-dosen {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  background: var(--white);
+  padding: 25px 20px;
+  border-radius: 16px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .3s ease;
+}
+
+.card-dosen:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.15);
 }
 
 .card-dosen img {
-  width: 200px;              /* ukuran kecil */
-  height: 180px;            
-  object-fit: contain;      
-  background-color: #ffffff; 
-  margin: 0 auto 12px;     
-  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
-.card-dosen h3 {
-  font-size: 16px;
+.card-dosen h4 {
+  font-size: 1rem;
   margin-bottom: 6px;
 }
 
-.card-dosen p {
-  font-size: 13px;
-  color: #666;
+.card-dosen span {
+  font-size: .9rem;
+  color: var(--muted);
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .featured-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-card img {
+    width: 180px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+}
 
 /* BUTTON */
 .btn-primary {
