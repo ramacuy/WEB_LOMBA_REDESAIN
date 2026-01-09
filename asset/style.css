@@ -660,15 +660,15 @@
       }
 
       .program-card.ibm {
-        background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400");
+        background-image: url("../asset/image/S1management.png");
       }
 
       .program-card.imt {
-        background-image: url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400");
+        background-image: url("../asset/image/S1informatika.webp");
       }
 
       .program-card.mem {
-        background-image: url("https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400");
+        background-image: url("../asset/image/S2management.webp");
       }
 
       /* WHY SECTION */
